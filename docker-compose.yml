@@ -1,0 +1,16 @@
+
+---
+
+## ✅ 2. نكتب `docker-compose.yml` علشان تسهّل تشغيل التطبيق
+
+لو ملف `docker-compose.yml` لسه فاضي، استخدم ده كمثال:
+
+```yaml
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    container_name: flask_docker_app
